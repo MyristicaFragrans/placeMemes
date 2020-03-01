@@ -13,7 +13,7 @@
 		foreach($images as $file) {
 			if($file=="index.php") continue;
         //atm I don't know how to sort by date uploaded
-				echo '<a href="'.$file.'" style="margin:5px;"><img src="'.$file.'" height="200px"></a>';
+				echo '<a href="'.$file.'" style="margin:5px;"><img src="'.urlencode($file).'" height="200px"></a>';
 		}
 		?>
 	</body>
